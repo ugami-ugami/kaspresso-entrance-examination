@@ -36,7 +36,8 @@ interface CerealStorage {
     fun getCereal(cereal: Cereal, amount: Float): Float
 
     /**
-     * @param cereal уничтожает пустой контейнер
+     * Уничтожает пустой контейнер
+     * @param cereal крупа, контейнер от которой нужно уничтожить
      * @return true если контейнер уничтожен и false если контейнер не пуст или отсутствует
      */
     fun removeContainer(cereal: Cereal): Boolean
